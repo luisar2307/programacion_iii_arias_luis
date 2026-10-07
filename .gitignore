@@ -1,46 +1,77 @@
-# =========================
-# DEPENDENCIAS
-# =========================
+# Dependencies
+/node_modules
 **/node_modules/
-.pnpm-debug.log*
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+node_modules
+jspm_packages/
 
-# =========================
-# BUILD Y SALIDAS (TypeScript, React, NestJS)
-# =========================
+# TypeScript build outputs & declarations
+/dist/
 **/dist/
+/build/
 **/build/
-**/.next/
-**/out/
-**/storybook-static/
-
-# =========================
-# TYPESCRIPT
-# =========================
 *.tsbuildinfo
-**/tsconfig.tsbuildinfo
+*.d.ts.map
 
-# =========================
-# VARIABLES DE ENTORNO
-# =========================
+# Testing & Coverage
+/coverage/
+**/coverage/
+.nyc_output/
+
+# Environment variables & secrets
 .env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+*.env
 *.env.*
-!.env.example
 
-# =========================
-# EDITOR Y SISTEMA OPERATIVO
-# =========================
-.DS_Store
-Thumbs.db
-**/.vscode/
-**/.idea/
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Diagnostic reports
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# IDEs, Editors & Operating Systems
+.idea/
 *.suo
+*.ntvs*
 *.njsproj
 *.sln
-*.sw?
+*.swp
+.vscode/
+*.code-workspace
+.project
+.settings/
+.classpath
+.factorypath
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Turborepo / Monorepo caches (if applicable)
+.turbo/
+.cache/
+
+# Package manager lockfiles (uncomment if you want to ignore lockfiles, though usually they are committed)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
