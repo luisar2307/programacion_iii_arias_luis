@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar cita</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header id="cabecera" title="Agendar cita">
+        <h1>Agendar Cita Médica</h1>
+        <p>Registro de consultas</p>
+    </header>
+
+    <nav id="menu" title="Menu Principal">
+        <a href="index.html">Inicio</a>
+        <a href="doctores.html">Doctores</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="multimedia.html">Multimedia</a>
+        <a href="inscripcion.html">Agendar cita</a>
+    </nav>
+    <hr>
+
+    <main>
+        <form action="#" method="get" id="registro-citas">
+            <fieldset>
+                <legend>Datos del paciente</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre"
+                       placeholder="Ej. Juan"
+                       minlength="3"
+                       maxlength="40"
+                       required>
+                <br><br>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido"
+                       placeholder="Ej. Pérez"
+                       minlength="3"
+                       maxlength="40"
+                       required>
+                <br><br>
+                <label for="cedula">Cédula:</label>
+                <input type="text" id="cedula" name="cedula"
+                       placeholder="1700000000"
+                       minlength="10"
+                       maxlength="10"
+                       required>
+                <br><br>
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" min="0" max="120">
+                <br><br>
+                <p>Género:</p>
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="femenino" name="genero" value="femenino">
+                <label for="femenino">Femenino</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Datos de la cita</legend>
+                <label for="especialidad">Especialidad:</label>
+                <select id="especialidad" name="especialidad" required>
+                    <option value="">
+                        Selecciona una especialidad
+                    </option>
+                    <option value="general">Medicina General</option>
+                    <option value="pediatria">Pediatría</option>
+                    <option value="cardiologia">Cardiología</option>
+                </select>
+                <br><br>
+                <label for="fecha">Fecha de la cita:</label>
+                <input type="date" id="fecha" name="fecha" required>
+                <br><br>
+                <label for="hora">Hora:</label>
+                <select id="hora" name="hora" required>
+                    <option value="">
+                        Selecciona una hora
+                    </option>
+                    <option value="08:00">08:00</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                </select>
+                <p>Exámenes requeridos:</p>
+                <input type="checkbox" id="sangre" name="examenes" value="sangre">
+                <label for="sangre">Examen de sangre</label>
+                <br>
+                <input type="checkbox" id="orina" name="examenes" value="orina">
+                <label for="orina">Examen de orina</label>
+                <br>
+                <input type="checkbox" id="rayos" name="examenes" value="rayos">
+                <label for="rayos">Rayos X</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Motivo de la consulta</legend>
+                <label for="motivo">Describe tus síntomas:</label>
+                <br>
+                <textarea id="motivo"
+                          name="motivo"
+                          rows="5"
+                          cols="45"
+                          maxlength="500"
+                          placeholder="Describe tus síntomas..."
+                          required></textarea>
+            </fieldset>
+            <br>
+            <button type="submit">
+                Agendar cita
+            </button>
+            <button type="reset">
+                Limpiar datos
+            </button>
+        </form>
+    </main>
+    <hr>
+
+    <footer>
+        <p><small>Portal de Consultas Médicas - 2026</small></p>
+    </footer>
+</body>
+</html>
