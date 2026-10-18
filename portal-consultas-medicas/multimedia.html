@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header id="cabecera" title="Multimedia">
+        <h1>Multimedia</h1>
+    </header>
+
+    <nav id="menu" title="Menu Principal">
+        <a href="index.html">Inicio</a>
+        <a href="doctores.html">Doctores</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="multimedia.html">Multimedia</a>
+        <a href="inscripcion.html">Agendar cita</a>
+    </nav>
+    <hr>
+
+    <main>
+        <h2>Reproductor de Audio</h2>
+        <audio id="musica" src="audios/habitos.mp3" controls autoplay loop>
+            Tu navegador no soporta el elemento audio HTML5.
+        </audio>
+
+        <h2>Reproductor de Video</h2>
+        <video id="video" src="videos/consulta.mp4" controls width="500">
+            Tu navegador no soporta el elemento video HTML5.
+        </video>
+
+        <h2>Formulario para agendar cita</h2>
+        <iframe src="inscripcion.html"
+            title="Formulario de Cita Médica" width="800" height="600" loading="lazy"></iframe>
+    </main>
+    <hr>
+
+    <footer>
+        <p><small>Portal de Consultas Médicas - 2026</small></p>
+    </footer>
+</body>
+</html>

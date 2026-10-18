@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Imagenes en HTML</h1>
+    </header>
+    <main>
+        <figure>
+            <img src="images/yoda.jpeg" 
+                alt="Maestro Yoda"
+                WIDTH="300" 
+                HEIGHT="300"
+                loading="lazy"
+                >
+        </figure>
+    <h1>En la carpeta Principal</h1>
+    
+    <figure>
+        <img src="../images/yoda.webp" 
+        alt="Maestro Yoda"
+        WIDTH="300" 
+        HEIGHT="300"
+        loading="eager"
+        >
+    </figure>
+
+    <h1>En la carpeta de imágenes</h1> 
+    <figure>
+        <img src="/images/papa_francisco/yoda_triste.jpg" 
+        alt="Maestro Yoda"
+        WIDTH="300" 
+        HEIGHT="300"
+        loading="lazy"
+        >
+        <figcaption> 
+            Maestro Yoda, integrante del Consejo Jedi, pero con la peculiaridad que esta triste 
+        </figcaption> 
+    </figure>
+</body>
+</html>

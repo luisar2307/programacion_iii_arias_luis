@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Registro de consultas</title>
+</head>
+<body>
+    <header>
+        <h1>Centro de Consultas Médicas</h1>
+        <p>Registro de citas</p>
+        <p>Autor: Luis Arias</p>
+    </header>
+    <hr>
+    <main>
+        <form action="#"
+              method="get"
+              id="registro-consultas">
+            <fieldset>
+                <legend>Información de la consulta</legend>
+                <label for="codigo">
+                    Código de consulta:
+                </label>
+                <input type="text"
+                       id="codigo"
+                       name="codigo"
+                       placeholder="CON-001"
+                       maxlength="10"
+                       required>
+                <br><br>
+                <label for="doctor">
+                    Doctor:
+                </label>
+                <select id="doctor"
+                        name="doctor"
+                        required>
+                    <option value="">
+                        Selecciona un doctor
+                    </option>
+                    <option value="ana">
+                        Dra. Ana Torres
+                    </option>
+                    <option value="carlos">
+                        Dr. Carlos Mena
+                    </option>
+                    <option value="lucia">
+                        Dra. Lucía Vera
+                    </option>
+                </select>
+                <br><br>
+                <label for="paciente">
+                    Paciente:
+                </label>
+                <input type="text"
+                       id="paciente"
+                       name="paciente"
+                       placeholder="Ej. Juan Pérez"
+                       required>
+                <br><br>
+                <label for="fecha">
+                    Fecha de la consulta:
+                </label>
+                <input type="date"
+                       id="fecha"
+                       name="fecha"
+                       required>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Características</legend>
+                <p>Prioridad de la consulta:</p>
+                <input type="radio"
+                       id="alta"
+                       name="prioridad"
+                       value="alta"
+                       required>
+                <label for="alta">Alta</label>
+                <input type="radio"
+                       id="media"
+                       name="prioridad"
+                       value="media">
+                <label for="media">Media</label>
+                <input type="radio"
+                       id="baja"
+                       name="prioridad"
+                       value="baja">
+                <label for="baja">Baja</label>
+                <br><br>
+                <label for="dolor">
+                    Nivel de dolor (1 a 10):
+                </label>
+                <input type="number"
+                       id="dolor"
+                       name="dolor"
+                       min="1"
+                       max="10"
+                       value="5">
+                <p>Exámenes necesarios:</p>
+                <input type="checkbox"
+                       id="sangre"
+                       name="examenes"
+                       value="sangre">
+                <label for="sangre">
+                    Examen de sangre
+                </label>
+                <br>
+                <input type="checkbox"
+                       id="orina"
+                       name="examenes"
+                       value="orina">
+                <label for="orina">
+                    Examen de orina
+                </label>
+                <br>
+                <input type="checkbox"
+                       id="rayos"
+                       name="examenes"
+                       value="rayos">
+                <label for="rayos">
+                    Rayos X
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Motivo de la consulta</legend>
+                <label for="descripcion">
+                    Síntomas principales:
+                </label>
+                <br>
+                <textarea id="descripcion"
+                          name="descripcion"
+                          rows="5"
+                          cols="45"
+                          maxlength="500"
+                          placeholder="Describe los síntomas..."
+                          required></textarea>
+            </fieldset>
+            <br>
+            <button type="submit">
+                Registrar consulta
+            </button>
+            <button type="reset">
+                Limpiar datos
+            </button>
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <p>
+            <small>
+                Centro de Consultas Médicas - 2026
+            </small>
+        </p>
+    </footer>
+</body>
+</html>

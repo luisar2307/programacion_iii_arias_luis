@@ -1,0 +1,37 @@
+body {
+    background-color: azure;
+}
+h1 {
+    color: teal;
+    text-align: center;
+}
+h2 {
+    color: darkcyan;
+}
+h3 {
+    color: navy;
+}
+nav a {
+    color: darkslateblue;
+}
+table {
+    border: 2px solid teal;
+}
+th {
+    background-color: darkcyan;
+    color: white;
+}
+fieldset {
+    margin: 10px;
+    padding: 10px;
+}
+.destacado {
+    color: crimson;
+}
+#cabecera {
+    border: 5px solid teal;
+    padding: 20px;
+}
+footer {
+    text-align: center;
+}
