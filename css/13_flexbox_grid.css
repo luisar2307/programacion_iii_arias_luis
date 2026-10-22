@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+.contenedor {
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+    background-color: darkcyan;
+}
+.personaje{
+    padding: 20px;
+    background-color: darkslateblue;
+    border: 2px solid yellow;
+}
+.consejo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 15px;
+    padding: 20px;
+    background-color: blue;
+    color: white;
+    
+}
+.operaciones{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 15px;
+    padding: 20px;
+    color: white;
+    background-color: black;
+
+}
+.operacion{
+    padding: 20px;
+    background-color: aqua;
+    border: 2px solid yellow;
+    text-align: center;
+}
+
+.hangar{
+    display: grid; 
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 130px 90px;
+    gap: 10px;
+    padding: 20px;
+    color: white;
+    background-color: gray;
+}
+
+.hangar div{
+    padding: 30px;
+    background-color: green;
+    border: 2px solid yellow;
+    text-align: center;
+}
+.flota{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    row-gap:20px;
+    column-gap: 30px;
+    color: white;
+    background-color: gray;
+}
+
+.flota div{
+    padding: 30px;
+    background-color: blue;
+    border: 2px solid green;
+    text-align: center;
+}
+.consejo2{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 15px;
+    padding: 20px;
+    background-color: blue;
+    color: white;
+}
+.naves{
+    display: grid;
+    grid-column: repeat(auto-fit, minmax(180, 1fr));
+    gap: 15px; 
+    padding: 20px;
+    background-color: blue;
+    color: white;
+}
+
+.naves div{
+    padding: 30px;
+    background-color: blue;
+    border: 2px solid greenyellow;
+    text-align: center;
+}
+.misiones{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    padding: 20px;
+    color: white;
+    background-color: aqua;
+}
+
+.misiones div{
+    padding: 30px;
+    background-color: red;
+    border: 2px solid yellow;
+    text-align: center;
+}
+
+.destacada{
+    grid-column:span 2;
+    padding: 30px;
+    background-color: green !important;
+    border: 2px solid yellow;
+    text-align: center;
+}
+.misiones2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    padding: 20px;
+    color: white;
+    background-color: aqua;
+}
+
+.misiones2 div{
+    padding: 30px;
+    background-color: red;
+    border: 2px solid yellow;
+    text-align: center;
+}
+
+.destacada2{
+    grid-row:span 2;
+    padding: 30px;
+    background-color: green !important;
+    border: 2px solid yellow;
+    text-align: center;
+}
