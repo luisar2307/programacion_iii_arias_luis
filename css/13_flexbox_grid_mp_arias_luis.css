@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+.contenedor {
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+    background-color: darkcyan;
+}
+.doctor{
+    padding: 20px;
+    background-color: darkslateblue;
+    border: 2px solid yellow;
+}
+.especialidades{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    padding: 20px;
+    background-color: blue;
+    color: white;
+
+}
+.agenda{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 15px;
+    padding: 20px;
+    color: white;
+    background-color: black;
+
+}
+.cita{
+    padding: 20px;
+    background-color: aqua;
+    color: black;
+    border: 2px solid yellow;
+    text-align: center;
+}
+
+.pisos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 130px 90px;
+    gap: 10px;
+    padding: 20px;
+    color: white;
+    background-color: gray;
+}
+
+.pisos div{
+    padding: 30px;
+    background-color: green;
+    border: 2px solid yellow;
+    text-align: center;
+}
+.servicios{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 30px;
+    color: white;
+    background-color: gray;
+}
+
+.servicios div{
+    padding: 30px;
+    background-color: blue;
+    border: 2px solid green;
+    text-align: center;
+}
+.semana{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 15px;
+    padding: 20px;
+    background-color: blue;
+    color: white;
+}
+.consultorios{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    background-color: blue;
+    color: white;
+}
+
+.consultorios div{
+    padding: 30px;
+    background-color: blue;
+    border: 2px solid greenyellow;
+    text-align: center;
+}
+.destacadas{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    padding: 20px;
+    color: white;
+    background-color: aqua;
+}
+
+.destacadas div{
+    padding: 30px;
+    background-color: red;
+    border: 2px solid yellow;
+    text-align: center;
+}
+
+.campana{
+    grid-column: span 2;
+    padding: 30px;
+    background-color: green !important;
+    border: 2px solid yellow;
+    text-align: center;
+}
+.destacadas2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    padding: 20px;
+    color: white;
+    background-color: aqua;
+}
+
+.destacadas2 div{
+    padding: 30px;
+    background-color: red;
+    border: 2px solid yellow;
+    text-align: center;
+}
+
+.jornada{
+    grid-row: span 2;
+    padding: 30px;
+    background-color: green !important;
+    border: 2px solid yellow;
+    text-align: center;
+}

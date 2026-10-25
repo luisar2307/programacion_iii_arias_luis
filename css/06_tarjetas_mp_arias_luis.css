@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    background-color: #0b1020;
+    color: darkgrey;
+    font-family: Arial, sans-serif;
+}
+
+header{
+    background-color: #172033;
+}
+
+h1{
+    color: #facc15;
+}
+main{
+    padding: 20px;
+}
+
+h2{
+    color: cadetblue;
+}
+
+.tarjeta h3{
+    margin-top: 0;
+    color: #facc15;
+}
+.tarjeta{
+    width: 100%;
+    max-width: 350px;
+    min-height: 100px;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: #172033;
+    border: 3px solid #facc15;
+    border-radius: 15px;
+}
+.disponible{
+    border-color: #22c55E;
+}
+.no-disponible{
+    border-color: #DC2626;
+}
+footer{
+    background-color: #172033;
+    padding: 15px;
+    text-align: center;
+}

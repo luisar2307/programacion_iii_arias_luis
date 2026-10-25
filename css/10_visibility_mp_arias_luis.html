@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility y Position</title>
+    <link rel="stylesheet" href="10_visibility_mp_arias_luis.css">
+</head>
+<body>
+    <header>
+        <h1>Portal de Consultas Médicas</h1>
+        <p>Autor: Luis Arias</p>
+    </header>
+    <nav>
+         <a href="#general">Medicina General</a>
+         <a href="#urgencias">Urgencias</a>
+         <a href="#vacunacion">Vacunación</a>
+    </nav>
+
+    <h1>Lista de Pacientes</h1>
+    <p>Paciente 1: Juan Pérez - control general</p>
+    <p class="reservada">Paciente 2: María Gómez - diagnóstico confidencial</p>
+    <p>Paciente 3: Pedro Ruiz - control pediátrico</p>
+
+    <h1>Fila de Turnos</h1>
+    <h2>Uso de propiedad position: relative</h2>
+    <div class="turno">Turno 1: Juan Pérez</div>
+    <div class="turno">Turno 2: Pedro Ruiz</div>
+    <div class="preferencial">Turno preferencial: adulto mayor</div>
+
+    <h2>Uso de propiedad position: absolute</h2>
+    <div class="sala-relativa">
+        <span class="etiqueta">URGENTE</span>
+        <h1>Sala de Emergencias</h1>
+        <p>Atención médica inmediata las 24 horas</p>
+    </div>
+
+    <h2>Uso de propiedad position: fixed</h2>
+    <p>El botón amarillo "Agendar cita" se queda siempre visible en la esquina.</p>
+
+    <section id="general">
+        <h2>Medicina General</h2>
+        <p>La consulta general es la primera atención del paciente. El médico revisa los síntomas, realiza un chequeo y, si es necesario, envía al paciente con un especialista.</p>
+    </section>
+    <section id="urgencias">
+        <h2>Urgencias</h2>
+        <p>El área de urgencias atiende casos que no pueden esperar, como dolor fuerte en el pecho, fracturas, dificultad para respirar y accidentes.</p>
+    </section>
+    <section id="vacunacion">
+        <h2>Vacunación</h2>
+        <p>La vacunación protege a toda la familia. Los niños reciben vacunas desde el nacimiento, y los adultos deben mantener sus refuerzos al día.</p>
+    </section>
+
+    <a class="boton-fijo"
+        href="#general">
+        Agendar cita
+    </a>
+</body>
+</html>
