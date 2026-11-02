@@ -1,0 +1,66 @@
+.secreta{
+    visibility: hidden;
+}
+.caja{
+    position:relative;
+    background-color: #2563eb;
+    color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.especial{
+    position: relative;
+    background-color: #15803d;
+    top: 15px;
+    left: 30px;
+}
+.etiqueta-relativa{
+    position: relative;
+    width: 300px;
+    padding: 30px;
+    border: 2px solid red;
+    background-color: grey;
+    color: yellow;
+
+}
+.etiqueta{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color:coral;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.boton-fijo{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 18px;
+    background-color: yellow;
+    color: black;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 10px;
+    padding: 20px;
+    background-color: gray;
+}
+
+nav a{
+    color: yellow;
+    margin-right: 20px;
+
+}
+
+section{
+    min-height: 45opx;
+    padding: 30px; 
+    border-bottom: 1px solid grey;
+}

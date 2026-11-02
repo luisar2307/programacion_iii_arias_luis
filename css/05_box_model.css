@@ -5,3 +5,16 @@
     border: 5px solid gold;
     margin: 30px;
 }
+.tarjeta_jedi{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 30px;
+    color: white;
+    background-color: darkslategrey;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
