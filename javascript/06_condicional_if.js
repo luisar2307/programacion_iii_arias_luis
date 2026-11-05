@@ -136,5 +136,3 @@ combustibleRick3>0 && energiaRick3>0 && rick_disponible2 && summer_disponible2==
 {
     console.log("Viaje Autorizado");
 }
-
-cons
