@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduccion a Javascript</title>
+    <script>
+        alert('Bienvenido al Portal de Consultas Médicas');
+        console.log('saludo desde el inicio de la pagina ');
+    </script>
+</head>
+<body>
+
+    <h1>Incluir JavaScript en documento html</h1>
+    <p>Autor: Luis Arias</p>
+    <h2>Modo Inline</h2>
+    <button onclick="alert('Recuerde llegar 15 minutos antes de su cita')">
+        Mostrar recordatorio de cita
+    </button>
+    <input type="text"
+        oninput="console.log(this.value );"
+        placeholder="Escribe tu nombre...">
+    <input type="text"
+        oninput="console.log('sintoma registrado',this.value );"
+        placeholder="Escribe tu síntoma y haz click afuera">
+    <input type="text"
+        oninput="console.log('el paciente esta escribiendo su cedula',this.value );"
+        onblur="alert('!Atencion! Saliste del campo de la cédula ')"
+        placeholder="Escribe tu cédula, haz click dentro y fuera">
+
+    <script src="01_incluir_mp_arias_luis.js"></script>
+    
+</body>
+</html>
