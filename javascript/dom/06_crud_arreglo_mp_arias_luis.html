@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="06_crud_arreglo_mp_arias_luis.js" defer></script>
+</head>
+<body>
+    <h1>Registro de Citas Medicas</h1>
+    <p>Autor: Luis Arias</p>
+    <h2 id="tituloFormulario">Registro de Paciente</h2>
+    <form id="formulario">
+        <input type="text" id="nombre" placeholder="Nombre del paciente">
+        <select name="" id="estado">
+            <option value="Pendiente">Pendiente</option>
+            <option value="Atendida">Atendida</option>
+            <option value="Cancelada">Cancelada</option>
+        </select>
+        <select name="" id="especialidad">
+            <option value="Medicina General">Medicina General</option>
+            <option value="Pediatria">Pediatria</option>
+            <option value="Cardiologia">Cardiologia</option>
+        </select>
+        <button type="submit" id="guardar"> Agregar</button>
+        <button type="button" id="cancelar" hidden>Cancelar</button>
+    </form>
+    <h2>Citas Registradas</h2>
+    <h2>Cantidad: <span id="cantidad"></span></h2>
+    <div id="contenedor"> </div>
+</body>
+</html>
