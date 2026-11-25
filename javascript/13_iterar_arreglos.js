@@ -1,4 +1,4 @@
-let cristales=[30,50,70,40];
+let cristales=[30,50,80,10];
 let posicion=2;
 let nuevaEnergia=100;
 for (let i=0; i< cristales.length; i++){
@@ -50,4 +50,3 @@ let validos= cristalesOriginales.filter(cristal=>cristal>=50);
 let resultado =cristalesOriginales.reduce((acumulador,elemento)=>{
     return acumulador+elemento;
 });
-
